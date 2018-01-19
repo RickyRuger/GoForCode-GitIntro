@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<title>Contact Us</title>
+		<div class="jumbotron" id="jumbotron">
+			<div class="container">
+				<button type="button" onclick="document.getElementById('jumbotron').style.display = 'none';" name="btnDisplayEvenNumbers" style="float: right;" class="btn">&#10006;</button>
+				<p class="lead">Welcome! We have a new Bob's Burger Location opening soon!</p>
+			</div>
+		</div>
+		<style>
+			label {
+				display: inline-block;
+				vertical-align: top;
+				text-align: right;
+				font-size: 16px;
+				width: 33%;
+				font-family: Arial, Helvetica, serif;
+			}
+			
+			label.required {
+				font-weight: bold;
+			}
+			
+			input {
+				display: inline-block;
+				font-size: 16px;
+				font-family: Arial, Helvetica, serif;
+			}
+			
+			input[type=submit]{
+				width: 150px;
+				text-align: center;
+				font-size: 16px;
+				border: 1px solid #000;
+			}
+			
+			input[type=text] {
+				background-color: #c6c5ba;
+				width: 33%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing:	border-box;
+				border: 1px solid #000;
+			}
+
+			select {
+				background-color: #c6c5ba;
+				width: 33%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing:	border-box;
+			}
+
+			textarea {
+				width: 33%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+				border-radius: 3px;
+				background-color: #c6c5ba;
+				resize: none;
+				border: 1px solid #000;
+			}
+			
+			#inquiry {
+				width: 33%;
+				text-align: center;
+				font-size: 16px;
+				border: 1px solid #000;
+			}
+			
+			.item {
+				white-space: nowrap;
+				display: inline-block;
+				horizontal-align: left;
+				text-align: center;
+				width: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="title">
+		<h1><center>Bob's Burgers</center></h1>
+		</div>
+		<div id="navigation">
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="menu.html">Menu</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="contactUs.html">Contact Us</a>
+			  </li>
+			</ul>
+		</div>
+		<div id="main">
+			<form action="submit.html" method="POST">
+				<label for="Name" class="required">Name:</label>
+				<input type="text" id="Name" name="Name" required></br>
+				<label for="Email">Email:</label>
+				<input type="text" id="Email" name="Email"></br>
+				<label for="Phone" class="required">Phone:</label>
+				<input type="text" id="Phone" name="Phone" required></br>
+				<label for="Inquiry" class="required">Reason for Inquiry:</label>
+				<select id="inquiry" name="Inquiry" required>
+					<option value="default" selected>Catering</option>
+					<option value="PrivateParty">Private Party</option>
+					<option value="Feedback">Feedback</option>
+					<option value="Other">Other</option>
+				</select>
+				<br />
+				<label for="info">Additional Information:</label>
+				<textarea id="info"></textarea><br />
+				<label for="radio">Have you been to the restaurant:</label>
+				<div class="item">
+				<input type="radio" id="choice1" name="questionnaire" value="no">
+				<label for="choice1">No</label>
+				<input type="radio" id="choice2" name="questionnaire" value="yes">
+				<label for="choice2">Yes</label><br />
+				</div>
+				<br />
+				<label for="checkbox">Best days to contact you:</label>
+				<div class="item">
+				<input type="checkbox" id="Monday" name="contactDay" value="Monday">
+				<label for="frontEnd">M</label>
+				<input type="checkbox" id="Tuesday" name="contactDay" value="Tuesday">
+				<label for="frontEnd">T</label>
+				<input type="checkbox" id="Wednesday" name="contactDay" value="Wednesday">
+				<label for="frontEnd">W</label>
+				<input type="checkbox" id="Thursday" name="contactDay" value="Thursday">
+				<label for="frontEnd">Th</label>
+				<input type="checkbox" id="Friday" name="contactDay" value="Friday">
+				<label for="frontEnd">F</label>
+				</div>
+				<br />
+				<br />
+				<label for="submit"></label>
+				<input type="submit" name="submit" value="Send Request">
+			</form>
+		</div>
+		<div id="footer">
+		<hr />
+		<footer>
+			<center><p>1 Bob's Way, Burger Town, NY. 12345</p>
+			<p>(555)555-5555</p></center>
+		</footer>
+		</div>
+	</body>
+</html>

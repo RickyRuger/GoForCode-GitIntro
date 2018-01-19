@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<title>Home Page</title>
+		<div class="jumbotron" id="jumbotron">
+			<div class="container">
+				<button type="button" onclick="document.getElementById('jumbotron').style.display = 'none';" name="btnDisplayEvenNumbers" style="float: right;" class="btn">&#10006;</button>
+				<p class="lead">Welcome! We have a new Bob's Burger Location opening soon!</p>
+			</div>
+		</div>
+	</head>
+	<body>
+		<div id="title">
+		<h1><center>Bob's Burgers</center></h1>
+		</div>
+		<noscript>
+			<div class="alert alert-danger">
+				This site is best viewed with JavaScript enabled
+			</div>
+		</noscript>
+		<div id="navigation">
+			<ul class="nav nav-tabs">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="menu.html">Menu</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contactUs.html">Contact Us</a>
+			  </li>
+			</ul>
+		</div>
+		<div id="main">
+			<div class="image" align="middle"><img src="images/burger.png" alt="Burger Picture" width="400"></div>
+			<div class="content">
+				<center><table style="border:1px solid black" width="50%" border="0" cellpadding="5" cellspacing="0">
+					<tr>
+						<td><center>Welcome to Bob's Burger website! Home of the greatest burger in Burger Town!</center></td>
+					</tr>
+				</table></center>
+			</div>
+		</div>
+		<div id="text-carousel" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="row">
+				<div class="col-xs-offset-3 col-xs-6">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="carousel-content">
+								<div>
+									<h5>We're opening a new location!</h5>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-content">
+								<div>
+									<h5>We're rolling out our seasonal menu, with special options for this season.</h5>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-content">
+								<div>                          
+									<h5>The Drink of the Month is SG Special Brew.</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Controls --> 
+			<a class="left carousel-control" href="#text-carousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#text-carousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<div id="footer">
+		<hr />
+		<footer>
+			<center><p>1 Bob's Way, Burger Town, NY. 12345</p>
+			<p>(555)555-5555</p></center>
+		</footer>
+		</div>
+	</body>
+</html>

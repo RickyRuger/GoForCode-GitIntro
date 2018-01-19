@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<title>Menu</title>
+		<div class="jumbotron" id="jumbotron">
+			<div class="container">
+				<button type="button" onclick="document.getElementById('jumbotron').style.display = 'none';" name="btnDisplayEvenNumbers" style="float: right;" class="btn">&#10006;</button>
+				<p class="lead">Welcome! We have a new Bob's Burger Location opening soon!</p>
+			</div>
+		</div>
+		<style>
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				table-layout: fixed;
+				background-color: #c6c5ba;
+			}
+				
+			td, th {
+				height: 30px;
+				
+			}
+			
+			td {
+				word-wrap: break-word
+				width: 60%;
+			}
+			
+			table th {
+				padding: 15px 15px;
+				font-size: 20px;
+			}
+			
+			#food th {
+				text-align: center;
+			}
+			
+			#beverages tr:nth-child(odd) {
+				background-color: #d5d2cb;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="title">
+		<h1><center>Bob's Burgers</center></h1>
+		</div>
+		<div id="navigation">
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="menu.html">Menu</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contactUs.html">Contact Us</a>
+			  </li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="food">
+				<table><table width="80%" align="center">
+					<tr>
+					   <th>Burger and Fries</th>
+					   <th>Hot Dog and Chips</th>
+					   <th>Italian Sausage and Peppers</th>
+					</tr>
+					<tr>
+					   <td align="center">An American Classic!
+					   Pickle, onion tomato, and lettuce. Served with our famous thick cut french fries</td>
+					   <td align="center">A Summer Classic!
+					   Relish, mustard, and ketchup</td>
+					   <td align="center">An All-time Favorite!
+					   Mild or spicy; Cole Slaw</td>
+					</tr>
+					<tr>
+					   <td align="center">$7.95</td>
+					   <td align="center">$7.95</td>
+					   <td align="center">$10.95</td>
+					</tr>
+					<tr>
+					   <th>Tenderloin Sandwich and Chips</th>
+					   <th>House Salad</th>
+					   <th>Brisket Sandwich and Fries</th>
+					</tr>
+					<tr>
+					   <td align="center">Really Hits the Spot!
+					   Pickle, onion tomato, and lettuce</td>
+					   <td align="center">On the Lighter Side</td>
+					   <td align="center">A Taste of Texas!
+					   Smoked Brisket on thick-cut Texas Toast</td>
+					</tr>
+					<tr>
+					   <td align="center">$8.95</td>
+					   <td align="center">$6.95</td>
+					   <td align="center">$7.95</td>
+					</tr>
+				</table>
+			</div>
+			<br />
+			<div id="beverages">
+				<table><table width="80%" align="center">
+					<tr>
+					   <th align="left"><u>Beverages</u></th>
+					   <th></th>
+					</tr>
+					<tr>
+					   <td align="left">Root Beer</td>
+					   <td align="center">$3.00</td>
+					</tr>
+					<tr>
+					   <td align="left">Bottled Water</td>
+					   <td align="center">$1.25</td>
+					</tr>
+					<tr>
+					   <td align="left">Lemonade</td>
+					   <td align="center">$1.00</td>
+					</tr>
+					<tr>
+					   <td align="left">Iced Tea</td>
+					   <td align="center">$1.25</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+		<hr />
+		<footer>
+			<center><p>1 Bob's Way, Burger Town, NY. 12345</p>
+			<p>(555)555-5555</p></center>
+		</footer>
+		</div>
+	</body>
+</html>
